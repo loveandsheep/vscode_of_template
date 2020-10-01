@@ -1,0 +1,126 @@
+{
+	// Place your agrist_controller ワークスペース snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"ofHeader ": {
+		"prefix": "ofheader",
+		"body": [
+			"#pragma once",
+			"#include \"ofMain.h\"",
+			"",
+			"class ${1:className} {",
+			"public:",
+			"",
+			"};"
+		]
+	},
+
+	"ofHeaderSetupUpdateDraw": {
+		"prefix": "ofheader-Setup-Update-Draw",
+		"body": [
+			"void setup();",
+			"void update();",
+			"void draw();"
+		]
+	},
+
+	"ofImplSetupUpdateDraw": {
+		"prefix": "ofimpl-Setup-Update-Draw",
+		"body": [
+			"void ${1:className}::setup() {",
+			"\t",
+			"}",
+			"",
+			"void ${1:className}::update() {",
+			"\t",
+			"}",
+			"",
+			"void ${1:className}::draw() {",
+			"\t",
+			"}",
+		]
+	},
+
+	"voidfunc" : {
+		"prefix": "voidfunc",
+		"body": [
+			"void ${1:className}::${2:funcName}(${3:args})",
+			"{",
+			"\t",
+			"}"
+		]
+	},
+
+	"func" : {
+		"prefix": "func",
+		"body": [
+			"${1:className}::${2:funcName}(${3:args})",
+			"{",
+			"\t",
+			"}"
+		]
+	},
+
+	"ofHeaderMouseFunc" : {
+		"prefix" : "ofheader-mouse-func",
+		"body" : [
+			"void mouseMoved(ofMouseEventArgs & arg);",
+			"void mousePressed(ofMouseEventArgs & arg);",
+			"void mouseDragged(ofMouseEventArgs & arg);",
+			"void mouseReleased(ofMouseEventArgs & arg);"
+		]
+	},
+
+	"ofImplMouseFunc" : {
+		"prefix" : "ofimpl-mouse-func",
+		"body" : [
+			"void ${1:className}::mouseMoved(ofMouseEventArgs & arg)",
+			"{",
+			"\t",
+			"}",
+			"void ${1:className}::mousePressed(ofMouseEventArgs & arg)",
+			"{",
+			"\t",
+			"}",
+			"void ${1:className}::mouseDragged(ofMouseEventArgs & arg)",
+			"{",
+			"\t",
+			"}",
+			"void ${1:className}::mouseReleased(ofMouseEventArgs & arg)",
+			"{",
+			"\t",
+			"}"
+		]
+	},
+
+	"ofImplMouseListener" : {
+		"prefix" : "ofimpl-mouse-listener",
+		"body" : [
+			"ofAddListener(ofEvents().mouseMoved   , this, &${1:className}::mouseMoved);",
+			"ofAddListener(ofEvents().mousePressed , this, &${1:className}::mousePressed);",
+			"ofAddListener(ofEvents().mouseDragged , this, &${1:className}::mouseDragged);",
+			"ofAddListener(ofEvents().mouseReleased, this, &${1:className}::mouseReleased);		
+		]
+	},
+
+	"cout" : {
+		"prefix" : "cout",
+		"body" : [
+			"cout << \"${1:message}\" << endl;"
+		]
+	}
+}
