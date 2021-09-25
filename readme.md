@@ -1,4 +1,4 @@
-# .vscode with oF template
+# vscode_of_template
 
 ## ビルドするまで
 
