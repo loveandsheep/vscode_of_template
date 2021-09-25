@@ -5,7 +5,7 @@ VSCode+WinでopenFrameworksのビルド+実行をするための設定ファイ�
 ## ビルドするまで
 
 - ProjectGeneratorでVisualStudio用のプロジェクトを作成する
-- リポジトリの.vscode一式を、プロジェクトファイル(.slnや.vcxprojがある階層)に入れる
+- リポジトリの.vscode一式を、プロジェクトフォルダ(.slnや.vcxprojがある階層)に入れる
 
 ## 各種ファイルの設定
 
