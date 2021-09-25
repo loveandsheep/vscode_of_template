@@ -1,9 +1,11 @@
 # vscode_of_template
 
+VSCode+WinでopenFrameworksのビルド+実行をするための設定ファイルです。msys2を使ってやるのは色々大変なので、VisualStudioのソリューションファイルにビルドコマンドを投げてビルドしてもらうという方式になっています。oFはVisualStudio版をダウンロードしてください。
+
 ## ビルドするまで
 
 - ProjectGeneratorでVisualStudio用のプロジェクトを作成する
-- .vscode一式を、プロジェクトファイル(.slnや.vcxprojがある階層)に入れる
+- リポジトリの.vscode一式を、プロジェクトファイル(.slnや.vcxprojがある階層)に入れる
 
 ## 各種ファイルの設定
 
