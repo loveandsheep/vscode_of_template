@@ -9,7 +9,7 @@
             "preLaunchTask": "build",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\bin\\$$$YOURPROJECTNAME$$$_debug.exe",
+            "program": "${workspaceFolder}\\bin\\YOURPROJECTNAME_debug.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
