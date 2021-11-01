@@ -113,7 +113,7 @@
 			"ofAddListener(ofEvents().mouseMoved   , this, &${1:className}::mouseMoved);",
 			"ofAddListener(ofEvents().mousePressed , this, &${1:className}::mousePressed);",
 			"ofAddListener(ofEvents().mouseDragged , this, &${1:className}::mouseDragged);",
-			"ofAddListener(ofEvents().mouseReleased, this, &${1:className}::mouseReleased);		
+			"ofAddListener(ofEvents().mouseReleased, this, &${1:className}::mouseReleased);"
 		]
 	},
 
