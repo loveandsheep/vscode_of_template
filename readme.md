@@ -11,7 +11,8 @@ VSCode+WinでopenFrameworksのビルド+実行をするための設定ファイ�
 
 ### launch.json と tasks.json
 
-- $$$YOURPROJECTNAME$$$をそれぞれ自分のプロジェクト名に変更する
+- "YOURPROJECTNAME"をそれぞれ自分のプロジェクト名に変更する
+- `./change_proj_name.ps1 myProjectName`と入力して一括変更できます。
 
 ### c_cpp_properties.json
 
